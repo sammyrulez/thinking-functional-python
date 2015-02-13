@@ -1,6 +1,6 @@
 import unittest
-from word_frequencies import word_freq
-from first_index_of_any import first_index_of
+from .word_frequencies import word_freq
+from .first_index_of_any import first_index_of
 
 
 class TestWordFreq(unittest.TestCase):
