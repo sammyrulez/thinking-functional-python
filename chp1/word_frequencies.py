@@ -1,30 +1,8 @@
 import re
+from commons.structures import FunList
 
 NON_WORDS = set(["the", "and", "of", "to", "a", "i",
                          "it", "in", "or", "is", "as", "so", "but"])
-
-
-class FunList(object):
-
-    def __init__(self, it):
-        self.iter = it
-
-    def __iter__(self):
-        for x in self.iter:
-            yield x
-
-    def filter(self, f):
-        return FunList(filter(f, self))
-
-    def map(self, f):
-        return FunList(map(f, self))
-
-    def iterate(self, f):
-        for k in self:
-            f(k)
-
-    def __str__(self):
-        return str(list(self))
 
 
 def word_freq(words):
