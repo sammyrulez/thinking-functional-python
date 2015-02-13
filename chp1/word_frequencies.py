@@ -1,7 +1,6 @@
-from sets import ImmutableSet
 import re
 
-NON_WORDS = ImmutableSet(["the", "and", "of", "to", "a", "i",
+NON_WORDS = set(["the", "and", "of", "to", "a", "i",
                          "it", "in", "or", "is", "as", "so", "but"])
 
 
