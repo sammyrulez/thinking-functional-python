@@ -1,6 +1,10 @@
 # thinking-functional-python
 
-Code examples from [Thinking Functional](http://shop.oreilly.com/product/0636920029687.do) book in python
+[![Build Status](https://travis-ci.org/sammyrulez/thinking-functional-python.svg?branch=master)](https://travis-ci.org/sammyrulez/thinking-functional-python)
+
+A collection of functional programming recipes in python.
+
+Quotes from [Thinking Functional](http://shop.oreilly.com/product/0636920029687.do) 
 
 ## Chapter 1
 
