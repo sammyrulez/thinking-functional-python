@@ -17,5 +17,8 @@ class FunList(object):
         for k in self:
             f(k)
 
+    def join(self, delimiter):
+        return delimiter.join(self)
+
     def __str__(self):
         return str(list(self))

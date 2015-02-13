@@ -1,5 +1,8 @@
-def clean_names(names):
-    def capitalize(name): return  name[:1].upper() + name[1:]
+from commons.structures import FunList
 
-    return ",".join(map(capitalize,filter(lambda name: len(name) > 1,names)))
+def clean_names(names):
+    def capitalize(name): return name[:1].upper() + name[1:]
+
+    #return ",".join(map(capitalize,filter(lambda name: len(name) > 1,names)))
+    return FunList(names).filter(lambda name: len(name) > 1).map(capitalize).join(",")
 
